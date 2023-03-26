@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kaushan+Script&family=Mulish:ital,wght@0,200;0,700;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,600;1,200;1,300;1,400;1,500;1,600;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --viridian-green: rgb(2, 157, 157);
+    --oxford-blue: rgb(23, 35, 63);
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #51a1a5;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-family: 'dancing script';
+
+}
+
+.nav-link {
+    margin: 0 15px;
+    color: #fff;
+}
+
+.hero {
+    margin: 4% 10%;
+    height: 70vh;
+}
+
+
+.hero .hero-col p,
+.destinations p,
+.about .heading,
+.blog .heading,
+footer .heading {
+    text-align: center;
+    font-family: 'dancing script';
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: rgb(247, 173, 37);
+    margin-top: 3rem;
+}
+
+.hero-col {
+    width: 100%;
+    text-align: center;
+}
+
+.hero .hero-col h1 {
+    font-family: 'cursive';
+    font-size: 3.5rem;
+    margin-top: 3rem;
+    color: rgb(62, 60, 60);
+}
+
+.hero-text {
+    width: 90%;
+    color: rgb(99, 99, 99);
+}
+
+.btn1 {
+    margin-top: 2rem;
+    background-color: #51a1a5;
+    color: #fff;
+}
+
+.btn1:hover {
+    border: 2px solid #51a1a5;
+    color: #51a1a5;
+    font-weight: 600;
+}
+
+.btn2 {
+    margin-top: 2rem;
+    border: 2px solid #919494;
+}
+
+.btn2:hover {
+    border: 1px solid #51a1a5;
+    color: #51a1a5;
+}
+
+.effect-wrap .effect {
+    position: absolute;
+    z-index: -1;
+}
+
+.effect-1 {
+    width: 30px;
+    height: 30px;
+    border: 4px solid #8a46ff;
+    right: 10%;
+    bottom: 10%;
+    animation: spin 6s linear infinite;
+}
+
+.effect-2 {
+    left: 3%;
+    bottom: 15%;
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: topBounce 3s ease-in-out infinite;
+}
+
+.effect-2 div {
+    height: 3px;
+    width: 3px;
+    background-color: #ff9c07;
+    margin: 0 3px 8px;
+}
+
+.effect-4 {
+    border-top: 30px solid transparent;
+    border-left: 30px solid #0edfd8;
+    left: 30%;
+    top: 20%;
+    animation: spin 15s linear infinite;
+}
+
+.effect-4:before {
+    content: '';
+    border-top: 30px solid transparent;
+    border-left: 30px solid #06d79c;
+    position: absolute;
+    opacity: 0.5;
+    left: -35px;
+    top: -25px;
+
+}
+
+@keyframes topBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(70px);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* DESTINATION SECTION START   */
+
+.destinations {
+    margin: 4% 10%;
+}
+
+.destinations h1,
+.about h1 {
+    text-align: center;
+    font-family: 'cursive';
+    font-size: 3rem;
+    -webkit-text-stroke: 1px rgba(162, 29, 14, 0.812);
+}
+
+.card-img {
+    height: 350px;
+}
+
+.card a {
+    font-family: dancing script;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translateY(15px);
+}
+
+/* DESTINATION SECTION END   */
+
+
+/* ABOUT SECTION START  */
+
+.about {
+    margin: 4% 10%;
+}
+
+.about .heading,
+.blog .heading {
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+
+.about-row h1 {
+    font-size: 2rem;
+}
+
+
+.fa-solid {
+    color: var(--viridian-green);
+    font-size: 30px;
+}
+
+.about .para {
+    color: rgb(145, 146, 142);
+}
+
+.about-col {
+    line-height: 26px;
+    word-spacing: 2px;
+}
+
+.about-col h2 {
+    text-align: center;
+
+}
+
+/* ABOUT SECTION END  */
+
+
+/* BLOG SECTION START  */
+.blog {
+    margin: 4% 10%;
+}
+
+.blog h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'cursive';
+    margin: 1rem auto 3rem;
+}
+
+.news .read-more {
+    color: #5c5b5b;
+    text-decoration: none;
+
+}
+
+/* BLOG SECTION END */
+
+/* FOOTER SECTION START  */
+
+.footer-details {
+    background: var(--oxford-blue);
+    color: #fff;
+    height: 50vh;
+}
+
+.footer-info {
+    margin: auto 10%;
+    display: flex;
+}
+
+footer .heading {
+    font-size: 3rem;
+    text-align: center;
+    margin: 4rem auto 3rem;
+}
+
+.para-1 {
+    color: rgb(177, 171, 171);
+}
+
+.footer-company,
+.footer-follow,
+.footer-message {
+    margin: 2rem 0 3rem;
+}
+
+.footer-company {
+    width: 35%;
+}
+
+.footer-follow {
+    width: 30%;
+}
+
+.footer-message input {
+    width: 120%;
+    margin-top: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.footer-follow .fa-brands {
+    width: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.footer-message button {
+    width: 120%;
+    margin-top: 10px;
+}
+
+/* FOOTER SECTION END */
+
+/* DEVELOPERS DETAILS SECTION START  */
+
+.last-one {
+    text-align: center;
+}
+
+.last-one span {
+    margin: auto 25px;
+}
+
+.last-one a {
+    color: #000;
+    text-decoration: none;
+    float: right;
+    margin: auto 3rem;
+}
+
+/* DEVELOPERS DETAILS SECTION END */
+
+
+
+/* MEDIA QUARIES START  */
+
+
+/* HERO SECTION  */
+@media screen and (max-width: 1080px) {
+    #hero {
+        height: 60%;
+
+    }
+
+    .hero-row {
+        position: relative;
+        margin-top: 8rem;
+
+    }
+
+    .effect-4 {
+        margin-top: -8rem;
+    }
+
+    .effect-1 {
+        position: relative;
+        top: 20rem;
+    }
+
+    .effect-2 {
+
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #hero {
+        height: 70%;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .hero-row {
+        position: relative;
+        margin-top: 8rem;
+    }
+
+    .effect-4 {
+        margin-top: -8rem;
+    }
+
+    .effect-1 {
+        position: relative;
+        top: 20rem;
+    }
+
+    .effect-2 {
+        display: none;
+    }
+
+    #footer .footer-details {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .hero-row {
+        display: inline;
+    }
+
+    /* .hero-img{
+        height: 400px;
+        width: 500px;
+        margin-top: 9rem;
+    } */
+    .effect-1 {
+        display: none;
+    }
+
+    .effect-4 {
+        margin-top: -14rem;
+    }
+
+    .hero-row {
+        margin-top: 1rem;
+    }
+
+    .hero-col {
+        width: 100%;
+    }
+
+    .hero-img img {
+        margin-top: 1rem;
+    }
+
+    .about-info {
+        display: inline;
+    }
+
+    .about-row {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .about-img img {
+        margin-left: -4rem;
+    }
+
+    .footer-info {
+        margin: 4% 6%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .about-img img {
+        margin-left: -3rem;
+        width: 420px;
+    }
+
+    .hero-img img {
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    .footer-info {
+        display: inline;
+    }
+
+    .footer-company {
+        width: 100%;
+    }
+
+    .footer-company h4 {
+        text-align: center;
+    }
+
+    .footer-company .para-1 {
+        margin: 4% 8%;
+    }
+
+    .footer-follow {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-follow .fa-brands {
+        padding: 15px;
+    }
+
+    .footer-message {
+        width: 50%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 6rem;
+
+    }
+
+    .footer-message h4 {
+        width: 100%;
+        margin: -2rem;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .about-img img {
+        width: 350px;
+    }
+
+    .footer-message {
+        margin-left: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 335px) {
+    .about-img img {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .about-img img {
+        width: 300px;
+    }
+}
+
+/* MEDIA QUARIES END */
+
+
+
+
+
+/* INDEXUP HTML  */
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=600) fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* THIS ONE IS FOR THE REGISTRATION PAGE  */
+
+.FORM-BOX1 {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-value h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox,
+.inputbox-1 {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label,
+.inputbox-1 label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+.inputbox input,
+.inputbox-1 input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: 0.9rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.forget label input {
+    margin-right: 3px;
+}
+
+.forget label a {
+    /* color: #fff; */
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+.button-1 {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.register {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    /* color: #fff; */
+    font-weight: 600;
+
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
